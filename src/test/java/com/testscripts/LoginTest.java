@@ -11,9 +11,9 @@ public class LoginTest {
 	
 @Test
 public void login() {
-	System.setProperty("Webdriver.gecko.driver", "C:\\Test Automation\\Amazon\\Drivers\\geckodriver.exe");
-	//WebDriverManager.chromedriver().setup();
-	WebDriver driver = new FirefoxDriver();
+	//System.setProperty("Webdriver.chrome.driver", "C:\\Test Automation\\Amazon\\Drivers\\webdrivermanager-5.2.2.jar");
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
 	driver.get("https://www.amazon.com/");
 	
 	
