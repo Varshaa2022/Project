@@ -12,9 +12,10 @@ public class LoginTest {
 @Test
 public void login() {
 	//System.setProperty("Webdriver.chrome.driver", "C:\\Test Automation\\Amazon\\Drivers\\webdrivermanager-5.2.2.jar");
-	WebDriverManager.chromedriver().setup();
-	WebDriver driver = new ChromeDriver();
+	WebDriverManager.firefoxdriver().setup();
+	WebDriver driver = new FirefoxDriver();
 	driver.get("https://www.amazon.com/");
+	driver.close();
 	
 	
 	
